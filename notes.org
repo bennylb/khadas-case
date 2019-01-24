@@ -2,20 +2,17 @@
 
 * Measurements
 ** Enclosure
-- Enclosure face Y (height) = 32.5mm
-- Enclosure face X (width) = 105.5mm
-- Enclosure half face Y = 16.25mm
-- Enclosure half face X = 52.75mm
-- Standoff = 7mm
-- Screw hole centre = Y = 4.8mm, X = 4.25mm
+- Enclosure case Y (height) = 32
+- Enclosure face Y (height) = 32.5
+- Enclosure face and case height difference = 0.5
+- Enclosure top/bottom material thickness = 1.2
+- Enclosure top/bottom recess depth = 1.5
+- Standoff height = 7
 ** Board
-*** I/O Y 7mm standoff
-
-*** I/O X 7mm standoff
-*** I/O Y
-- USB C centre = 1.64mm
-- RCA centre = 7mm
-- I/O centre Y = 7mm - 1.64mm = 5.36
-- I/O centre Y half = 5.36 / 2 = 2.68
-- USB C centre -> face bottom = 16.25 - 2.68 = 13.57
-*** I/O X
+- Board thickness = 1.2
+- Board top to USB centre = 1.64
+** I/O Measurements/Coords
+- USB centre Y
+#+BEGIN_SRC emacs-lisp
+(+ 1.5 1.2 (/ 0.5 2) 7 1.2 1.64)
+#+END_SRC
