@@ -1,0 +1,16 @@
+#+TITLE: notes
+
+* Measurements
+** Enclosure
+- Enclosure face Y (height) = 32.5mm
+- Enclosure face X (width) = 105.5mm
+- Enclosure half face Y = 16.25mm
+- Enclosure half face X = 52.75mm
+- Standoff = 7mm
+- Screw hole centre = Y = 4.8mm, X = 4.25mm
+** Board
+- USB C centre = 1.64mm
+- RCA centre = 7mm
+- I/O centre Y = 7mm - 1.64mm = 5.36
+- I/O centre Y half = 5.36 / 2 = 2.68
+- USB C centre -> face bottom = 16.25 - 2.68 = 13.57
