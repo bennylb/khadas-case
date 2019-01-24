@@ -4,16 +4,32 @@
 ** Enclosure
 - Enclosure case Y (height) = 32
 - Enclosure face Y (height) = 32.5
+- Enclosure case X (width) = 105
+- Enclosure face X (width) = 105.5
 - Enclosure face and case height difference = 0.5
+- Enclosure face and case width difference = 0.5
 - Enclosure top/bottom material thickness = 1.2
 - Enclosure top/bottom recess depth = 1.5
 - Standoff height = 7
 ** Board
 - Board thickness = 1.2
 - Board top to USB centre = 1.64
-** Testing
 ** I/O Measurements/Coords
-- USB centre Y
+*** I/O Y
+- USB centre Y:
+
 #+BEGIN_SRC emacs-lisp
 (+ 1.5 1.2 (/ 0.5 2) 7 1.2 1.64)
 #+END_SRC
+
+*** I/O X
+- RCA 1 -> RCA 2 centre = 18.4
+- RCA 2 -> RCA 3 centre = 18.4
+- USB -> RCA 1 centre = 31.89
+- USB -> RCA 3 centre:
+
+#+BEGIN_SRC emacs-lisp
+(+ 31.89 18.4 18.4)
+#+END_SRC
+
+- I/O centre X
