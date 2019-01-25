@@ -4,11 +4,12 @@
 ** Enclosure
 - Enclosure case Y (height) = 32
 - Enclosure face Y (height) = 32.5
+- Enclosure case inner Y (height) = 26
 - Enclosure case X (width) = 105
 - Enclosure face X (width) = 105.5
 - Enclosure face and case height difference = 0.5
 - Enclosure face and case width difference = 0.5
-- Enclosure top/bottom material thickness = 1.2
+- Enclosure top/bottom material thickness = 1.5 (1.2 actual)
 - Enclosure top/bottom recess depth = 1.5
 - Standoff height = 7
 ** Board
@@ -19,7 +20,13 @@
 - USB centre Y:
 
 #+BEGIN_SRC emacs-lisp
-(+ 1.5 1.2 (/ 0.5 2) 7 1.2 1.64)
+(+ 1.5 1.5 (/ 0.5 2) 7 1.2 1.64)
+#+END_SRC
+
+or
+
+#+BEGIN_SRC emacs-lisp
+(+ (/ (- 32.5 26) 2) 7 1.2 1.64)
 #+END_SRC
 
 *** I/O X
