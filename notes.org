@@ -29,11 +29,15 @@ or
 (+ (/ (- 32.5 26) 2) 7 1.2 1.64)
 #+END_SRC
 
+- RCA centre X:
+#+BEGIN_SRC emacs-lisp
+(+ (/ (- 32.5 26) 2) 7 1.2 7)
+#+END_SRC
+
 *** I/O X
 - RCA 1 -> RCA 2 centre = 18.4
 - RCA 2 -> RCA 3 centre = 18.4
 - USB -> RCA 1 centre = 31.89
-- USB -> RCA 3 centre:
 
 #+BEGIN_SRC emacs-lisp
 (/ (- 105.5 (+ 31.89 18.4 18.4)) 2)
